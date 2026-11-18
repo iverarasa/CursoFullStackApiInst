@@ -23,7 +23,7 @@ public class DepartamentoController {
 
     @GetMapping 
     public List<DepartamentoDto> findAll(){
-        System.out.println("findAll() called in DepartamentoController");
+        System.out.println("findAll() called in DepartamentoController 43434343");
         return departamentoService.findAll().stream()
             .map(depto -> modelMapper.map(depto, DepartamentoDto.class))
             .toList();
